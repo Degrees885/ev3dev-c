@@ -67,6 +67,12 @@ void moveMotorTarget(tMotor motor, int position, int8_t speed);
 void resetMotorEncoder(tMotor motor);
 void setMotorBrakeMode(tMotor motor, TBrakeModes brakeMode);
 void setMotorReversed(tMotor motor, bool rev);
+
+/**
+ * \brief Set motor to run at specified speed
+ * \param motor Motor port
+ * \param speed Target speed (-100 to 100)
+ */
 void setMotorSpeed(tMotor motor, int8_t speed);
 void setMotorSync(tMotor motor1, tMotor motor2, int8_t turnRatio, int8_t speed);
 void setMotorSyncEncoder(tMotor motor1, tMotor motor2, int8_t turnRatio, int enc, int8_t speed);
